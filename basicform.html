@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <form> 
+    <head ><b>FORM</b></head>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Personal Information</legend>
+        
+         <label for="name" >Name:</label>
+         <input type="text" name="name" id="name" placeholder="enter your name">
+         <br>
+         <br>
+         <label for="emailid">e-mail ID:</label>
+         <input type="email" name="emailid" id="emailid" placeholder="enter your email">
+         <br>
+         <br>
+         <label for="phonenumber">Phone No.:</label>
+         <input type="tel" name="phonenumber" id="phonenumber" placeholder="123-45-678"
+         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+         <br>
+         <br>
+         <label for="dob">Date of birth:</label>
+         <input type="date" name="dob" id="dob">
+         <p>Gender:</p>
+         <label for="radio1">Male:</label>
+         <input type="radio" name="radio" id="radio1">
+         <label for="radio2">Female:</label>
+         <input type="radio" name="radio" id="radio2">
+         <br>
+         <br>
+         <label for="state">State:</label>
+         <select name="state" id="state">
+            <option value="">--choose your state--</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="Bihar">Bihar</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="maharastra">Maharastra</option>
+         </select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" placeholder="enter your city">
+        <br>
+        <br>
+        <label for="street">Street:</label>
+        <input type="text" name="street" id="street" placeholder="enter your street">
+        <br>
+        <br>
+        <label for="code">PIN Code:</label>
+        <input type="text" name="code" id="code" placeholder="12345" pattern="[0-9]{5}">
+    </fieldset>
+    <fieldset>
+        <legend>Other Information</legend>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments" rows="5" cols="50" placeholder="comments"></textarea>
+        <br>
+        <br>
+        <label for="terms">I agree to the terms of service: </label>
+        <input type="checkbox" name="terms" id="terms">
+    </fieldset>
+    <br>
+
+    <input type="submit" name="submit" id="submit">
+</form>
+  </body>
+</html>
